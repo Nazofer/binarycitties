@@ -41,7 +41,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 
-  
+  scroll-behavior: smooth;
 }
 
 input,
@@ -334,13 +334,18 @@ body {
     max-width: 1200px;
     margin-bottom: 65px;
 
-    img {
-      width: 538px;
+    div {
+      max-width: 538px;
       height: 365px;
       background-color: #eaeaea;
-      object-fit: cover;
+      
       // border: 4px solid #DEB887;
       box-shadow: 5px 5px 10px -4px #000000;
+    }
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 

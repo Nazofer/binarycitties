@@ -128,8 +128,9 @@ body {
 
 .menu-buttons {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 0 auto;
   margin-bottom: 154px;
   padding: 22px 0;
 }
@@ -293,8 +294,12 @@ body {
   align-items: center;
   gap: 40px;
 }
+.portfolio .navbar {
+  width: 100%;
+}
 .portfolio .menu-buttons {
-  padding: 10px 0 0 0;
+  padding-top: 10px;
+  justify-content: space-around;
   margin-bottom: 120px;
 }
 .portfolio .title {

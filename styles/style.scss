@@ -236,6 +236,12 @@ body {
 
 .content {
 
+  .menu-buttons {
+    @media only screen and (max-width: 512px) {
+      margin-bottom: 70px;
+    }
+  }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -252,6 +258,9 @@ body {
       line-height: 25.89px;
       text-align: center;
       max-width: 688px;
+      @media only screen and (max-width: 512px) {
+        padding: 0 50px;
+      }
     }
   }
 
@@ -260,14 +269,22 @@ body {
     justify-content: center;
     text-align: center;
     max-width: 823px;
+    
     margin: 0 auto;
     padding-bottom: 60px;
-
+    @media only screen and (max-width: 512px) {
+       flex: 1 1 100%;
+       flex-wrap: wrap;
+       & > .row {
+        margin-bottom: 30px;
+        padding: 0 50px;
+       }
+    }
     .row {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      
       .circle {
         display: flex;
         justify-content: center;
@@ -333,12 +350,14 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     margin-bottom: 65px;
-
+    
     div {
       max-width: 538px;
       height: 365px;
       background-color: #eaeaea;
-
+      @media only screen and (max-width: 512px) {
+        margin: 40px;
+      }
       // border: 4px solid #DEB887;
       box-shadow: 5px 5px 10px -4px #000000;
     }
@@ -363,7 +382,6 @@ body {
   flex-direction: column;
   align-items: center;
   background: url(../img/wallpapersden.com_cat-lying-cool-cat_1920x1080.jpg) center / cover no-repeat;
-
   .text {
     font-size: 30px;
     font-weight: 300;

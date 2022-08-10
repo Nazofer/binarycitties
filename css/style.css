@@ -212,6 +212,11 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 512px) {
+  .content .menu-buttons {
+    margin-bottom: 70px;
+  }
+}
 .content .about {
   display: flex;
   flex-direction: column;
@@ -228,6 +233,11 @@ body {
   text-align: center;
   max-width: 688px;
 }
+@media only screen and (max-width: 512px) {
+  .content .about .subtitle {
+    padding: 0 50px;
+  }
+}
 .content .columns {
   display: flex;
   justify-content: center;
@@ -235,6 +245,16 @@ body {
   max-width: 823px;
   margin: 0 auto;
   padding-bottom: 60px;
+}
+@media only screen and (max-width: 512px) {
+  .content .columns {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+  .content .columns > .row {
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
 }
 .content .columns .row {
   display: flex;
@@ -302,6 +322,11 @@ body {
   height: 365px;
   background-color: #eaeaea;
   box-shadow: 5px 5px 10px -4px #000000;
+}
+@media only screen and (max-width: 512px) {
+  .portfolio .pictures div {
+    margin: 40px;
+  }
 }
 .portfolio .pictures img {
   max-width: 100%;

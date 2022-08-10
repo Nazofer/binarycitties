@@ -268,23 +268,23 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    max-width: 823px;
-    
+    gap: 20px;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 60px;
-    @media only screen and (max-width: 512px) {
-       flex: 1 1 100%;
-       flex-wrap: wrap;
-       & > .row {
-        margin-bottom: 30px;
-        padding: 0 50px;
-       }
-    }
+    // @media only screen and (max-width: 512px) {
+    //    flex: 1 1 100%;
+    //    flex-wrap: wrap;
+    //    & > .row {
+    //     margin-bottom: 30px;
+    //     padding: 0 50px;
+    //    }
+    // }
     .row {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+      max-width: 260px;
       .circle {
         display: flex;
         justify-content: center;

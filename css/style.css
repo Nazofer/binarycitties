@@ -242,24 +242,16 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-width: 823px;
+  gap: 20px;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 60px;
-}
-@media only screen and (max-width: 512px) {
-  .content .columns {
-    flex: 1 1 100%;
-    flex-wrap: wrap;
-  }
-  .content .columns > .row {
-    margin-bottom: 30px;
-    padding: 0 50px;
-  }
 }
 .content .columns .row {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 260px;
 }
 .content .columns .row .circle {
   display: flex;

@@ -338,14 +338,16 @@ body {
       max-width: 538px;
       height: 365px;
       background-color: #eaeaea;
-      
+
       // border: 4px solid #DEB887;
       box-shadow: 5px 5px 10px -4px #000000;
     }
+
     img {
       max-width: 100%;
       height: 100%;
       object-fit: cover;
+
     }
   }
 
@@ -361,7 +363,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: url(../img/wallpapersden.com_cat-lying-cool-cat_1920x1080.jpg) center / cover no-repeat;
-  
+
   .text {
     font-size: 30px;
     font-weight: 300;
@@ -370,19 +372,29 @@ body {
     padding: 100px 0 70px 0;
     color: #ffffff;
   }
+
   .pics {
     display: flex;
     flex-wrap: wrap;
     gap: 70px;
     padding-bottom: 100px;
-  
+    
+    & > div { 
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 512px) {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 40px;
+    }
   }
-  
+
 }
 
 .contacts {
   .container {
-    
+
     .header {
       display: flex;
       justify-content: center;
@@ -390,27 +402,37 @@ body {
       align-items: center;
       padding: 180px 0 0 0;
       margin: 0 0 120px 0;
+      @media only screen and (max-width: 512px) {
+        padding: 90px 0 0 0;
+        margin: 0 0 60px 0;
+      }
       .line {
         margin-top: 40px;
       }
     }
+
     .body {
-    display: flex;
-    flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+
       .first-column {
         display: flex;
         justify-content: right;
       }
+
       .contacts-column {
         flex: 0 1 50%;
         padding: 0 25px;
-        
+        @media only screen and (max-width: 512px) {
+          flex: 1 1 100%;
+          justify-content: center;
+        }
         .form {
-          max-width: 385px;
+          max-width: 420px;
           text-align: right;
           display: inline-block;
           width: 100%;
-          
+
 
           .column {
             .label {
@@ -421,15 +443,24 @@ body {
               text-transform: uppercase;
             }
           }
+
           .row {
             display: flex;
             flex-wrap: wrap;
             margin: 0 -15px 70px -15px;
+            @media only screen and (max-width: 512px) {
+              margin-bottom:20px;
+            }
             .column {
               flex: 0 1 50%;
               padding: 0 15px;
+              @media only screen and (max-width: 512px) {
+                flex: 1 1 100%;
+                justify-content: center;
+              }
             }
           }
+
           .input {
             margin-bottom: 20px;
             border-top: 1px solid black;
@@ -440,52 +471,76 @@ body {
             background-color: #f8f7f7;
             border-radius: 0;
             font-size: 15px;
+            @media only screen and (max-width: 512px) {
+              margin-bottom: 50px;
+              .last {
+                margin-bottom: 20px;
+              }
+            }
+
             &:focus {
               border-top: 2px solid #ada074;
             }
+
             &:invalid:focus {
               border-top: 2px solid red;
             }
           }
+
           textarea.input {
             resize: none;
             padding: 10px 20px;
-            appearance: none; 
+            appearance: none;
             height: 120px;
+            @media only screen and (max-width: 512px) {
+                margin-bottom: 20px;
+            }
           }
+
           .main-button {
             border: 1px solid black;
             color: black;
-            background-color: transparent;;
+            background-color: transparent;
+            ;
           }
         }
       }
+
       img {
         width: 29px;
         height: 29px;
       }
+
       .content {
         max-width: 260px;
+        @media only screen and (max-width: 512px) {
+          padding-bottom: 40px;
+        }
         .text {
           font-style: 14px;
           font-weight: 300;
           line-height: 26px;
           margin-bottom: 35px;
         }
+
         .name {
           font-weight: 700;
           font-style: 14px;
           margin-bottom: 25px;
         }
+
         .email {
           font-style: 14px;
-          a{
+
+          a {
             font-weight: 700;
             color: #000000;
+
             &:hover {
               text-decoration: underline;
             }
           }
+
           margin-top: 15px;
         }
       }
@@ -495,8 +550,10 @@ body {
 
 .footer {
   background-color: #3c3c3c;
+
   .container {
     padding-top: 48px;
+
     .body {
       display: flex;
       flex-direction: column;
@@ -504,21 +561,24 @@ body {
       margin: 0 auto;
       max-width: 260px;
       text-align: center;
+
       .menu-buttons {
         padding: 40px 0;
-        
+
         margin: 0;
         gap: 20px;
+
         a {
           font-weight: 400;
           color: #a4a4a4;
           height: 11px;
-      
+
           &:hover {
             font-weight: 700;
           }
         }
       }
+
       .rights {
         font-family: "Myriad Pro";
         color: #6c6c6c;

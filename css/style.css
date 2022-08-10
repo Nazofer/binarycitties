@@ -334,6 +334,16 @@ body {
   gap: 70px;
   padding-bottom: 100px;
 }
+.partners .pics > div {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 512px) {
+  .partners .pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
 
 .contacts .container .header {
   display: flex;
@@ -342,6 +352,12 @@ body {
   align-items: center;
   padding: 180px 0 0 0;
   margin: 0 0 120px 0;
+}
+@media only screen and (max-width: 512px) {
+  .contacts .container .header {
+    padding: 90px 0 0 0;
+    margin: 0 0 60px 0;
+  }
 }
 .contacts .container .header .line {
   margin-top: 40px;
@@ -358,8 +374,14 @@ body {
   flex: 0 1 50%;
   padding: 0 25px;
 }
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .contacts-column {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
 .contacts .container .body .contacts-column .form {
-  max-width: 385px;
+  max-width: 420px;
   text-align: right;
   display: inline-block;
   width: 100%;
@@ -376,9 +398,20 @@ body {
   flex-wrap: wrap;
   margin: 0 -15px 70px -15px;
 }
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .contacts-column .form .row {
+    margin-bottom: 20px;
+  }
+}
 .contacts .container .body .contacts-column .form .row .column {
   flex: 0 1 50%;
   padding: 0 15px;
+}
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .contacts-column .form .row .column {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
 }
 .contacts .container .body .contacts-column .form .input {
   margin-bottom: 20px;
@@ -390,6 +423,14 @@ body {
   background-color: #f8f7f7;
   border-radius: 0;
   font-size: 15px;
+}
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .contacts-column .form .input {
+    margin-bottom: 50px;
+  }
+  .contacts .container .body .contacts-column .form .input .last {
+    margin-bottom: 20px;
+  }
 }
 .contacts .container .body .contacts-column .form .input:focus {
   border-top: 2px solid #ada074;
@@ -403,6 +444,11 @@ body {
   appearance: none;
   height: 120px;
 }
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .contacts-column .form textarea.input {
+    margin-bottom: 20px;
+  }
+}
 .contacts .container .body .contacts-column .form .main-button {
   border: 1px solid black;
   color: black;
@@ -414,6 +460,11 @@ body {
 }
 .contacts .container .body .content {
   max-width: 260px;
+}
+@media only screen and (max-width: 512px) {
+  .contacts .container .body .content {
+    padding-bottom: 40px;
+  }
 }
 .contacts .container .body .content .text {
   font-style: 14px;
